@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtralanfirg6q"]
+
+[ext_resource type="Texture2D" uid="uid://dio7wru5p3ghg" path="res://aset/forest.jpg" id="1_d7un2"]
+[ext_resource type="FontFile" uid="uid://d08f4lavsffpc" path="res://aset/font/Struick Demo.otf" id="2_lskq0"]
+[ext_resource type="Script" path="res://Button.gd" id="2_sid8h"]
+[ext_resource type="AudioStream" uid="uid://b2k4t07mdxt5k" path="res://aset/9E8C7YR-retro-game-game-over.mp3" id="3_dv30i"]
+[ext_resource type="FontFile" uid="uid://ccjmnyjhe6fai" path="res://aset/font/CARLOSEA.ttf" id="4_x41j1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(575.5, 325.5)
+scale = Vector2(2.03723, 2.0538)
+texture = ExtResource("1_d7un2")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 262.0
+offset_top = 299.0
+offset_right = 810.0
+offset_bottom = 619.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_lskq0")
+theme_override_font_sizes/font_size = 50
+text = "NEW GAME"
+script = ExtResource("2_sid8h")
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_lskq0")
+theme_override_font_sizes/font_size = 50
+text = "OPTION"
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer3"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_lskq0")
+theme_override_font_sizes/font_size = 50
+text = "LOAD GAME"
+
+[node name="MarginContainer4" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer4"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_lskq0")
+theme_override_font_sizes/font_size = 50
+text = "SETTING"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 268.0
+offset_top = 121.0
+offset_right = 835.0
+offset_bottom = 234.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_x41j1")
+theme_override_font_sizes/font_size = 80
+text = "MOMO GAME"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_dv30i")
+autoplay = true
+
+[connection signal="button_up" from="MarginContainer/VBoxContainer/MarginContainer/Button" to="MarginContainer/VBoxContainer/MarginContainer/Button" method="_on_button_up"]

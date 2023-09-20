@@ -1,0 +1,33 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://d08f4lavsffpc"
+path="res://.godot/imported/Struick Demo.otf-b188847b57f39b93091f91223e1f7a2d.fontdata"
+
+[deps]
+
+source_file="res://aset/font/Struick Demo.otf"
+dest_files=["res://.godot/imported/Struick Demo.otf-b188847b57f39b93091f91223e1f7a2d.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+hinting=1
+subpixel_positioning=1
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}

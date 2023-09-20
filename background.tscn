@@ -1,0 +1,138 @@
+[gd_scene load_steps=11 format=3 uid="uid://o3kxkvroupx2"]
+
+[ext_resource type="Script" path="res://sky.gd" id="1_5ln7w"]
+[ext_resource type="Texture2D" uid="uid://csi8mwd6axwoa" path="res://aset/parallax/parallax-00.png" id="2_46j8q"]
+[ext_resource type="Script" path="res://cloud.gd" id="3_wn24g"]
+[ext_resource type="Texture2D" uid="uid://cyivd2hhvm3m4" path="res://aset/parallax/parallax-01.png" id="4_ujlnm"]
+[ext_resource type="Texture2D" uid="uid://cffa7txswvsa1" path="res://aset/parallax/parallax-02.png" id="5_6r7nc"]
+[ext_resource type="Script" path="res://mount.gd" id="5_eh6re"]
+[ext_resource type="Texture2D" uid="uid://d0067rbmfge4x" path="res://aset/parallax/parallax-03.png" id="6_4oaou"]
+[ext_resource type="Script" path="res://forest.gd" id="7_ayvu7"]
+[ext_resource type="Texture2D" uid="uid://dlnmocru8ylcn" path="res://aset/parallax/parallax-04.png" id="7_uyqfa"]
+[ext_resource type="Script" path="res://tree.gd" id="9_wcr3s"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="sky" type="ParallaxLayer" parent="."]
+script = ExtResource("1_5ln7w")
+
+[node name="Sprite2D" type="Sprite2D" parent="sky"]
+position = Vector2(721, 176)
+texture = ExtResource("2_46j8q")
+
+[node name="Sprite2D5" type="Sprite2D" parent="sky"]
+position = Vector2(-711, 179)
+texture = ExtResource("2_46j8q")
+
+[node name="Sprite2D3" type="Sprite2D" parent="sky"]
+position = Vector2(3490, 182)
+texture = ExtResource("2_46j8q")
+
+[node name="Sprite2D2" type="Sprite2D" parent="sky"]
+position = Vector2(2116, 182)
+texture = ExtResource("2_46j8q")
+
+[node name="Sprite2D4" type="Sprite2D" parent="sky"]
+position = Vector2(4868, 182)
+texture = ExtResource("2_46j8q")
+
+[node name="cloud" type="ParallaxLayer" parent="."]
+script = ExtResource("3_wn24g")
+
+[node name="Sprite2D" type="Sprite2D" parent="cloud"]
+position = Vector2(722, 222)
+texture = ExtResource("4_ujlnm")
+
+[node name="Sprite2D5" type="Sprite2D" parent="cloud"]
+position = Vector2(-694, 184)
+texture = ExtResource("4_ujlnm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="cloud"]
+position = Vector2(2135, 232)
+texture = ExtResource("4_ujlnm")
+
+[node name="Sprite2D3" type="Sprite2D" parent="cloud"]
+position = Vector2(3490, 252)
+texture = ExtResource("4_ujlnm")
+
+[node name="Sprite2D4" type="Sprite2D" parent="cloud"]
+position = Vector2(4876, 292)
+texture = ExtResource("4_ujlnm")
+
+[node name="mount" type="ParallaxLayer" parent="."]
+script = ExtResource("5_eh6re")
+
+[node name="Sprite2D" type="Sprite2D" parent="mount"]
+position = Vector2(721, 314)
+texture = ExtResource("5_6r7nc")
+
+[node name="Sprite2D5" type="Sprite2D" parent="mount"]
+position = Vector2(-685, 309)
+texture = ExtResource("5_6r7nc")
+
+[node name="Sprite2D2" type="Sprite2D" parent="mount"]
+position = Vector2(2114, 331)
+texture = ExtResource("5_6r7nc")
+
+[node name="Sprite2D3" type="Sprite2D" parent="mount"]
+position = Vector2(3543, 330)
+texture = ExtResource("5_6r7nc")
+
+[node name="Sprite2D4" type="Sprite2D" parent="mount"]
+position = Vector2(4947, 334)
+scale = Vector2(0.959028, 1)
+texture = ExtResource("5_6r7nc")
+
+[node name="forest" type="ParallaxLayer" parent="."]
+script = ExtResource("7_ayvu7")
+
+[node name="Sprite2D" type="Sprite2D" parent="forest"]
+position = Vector2(716, 309)
+texture = ExtResource("6_4oaou")
+
+[node name="Sprite2D5" type="Sprite2D" parent="forest"]
+position = Vector2(-690, 316)
+texture = ExtResource("6_4oaou")
+
+[node name="Sprite2D2" type="Sprite2D" parent="forest"]
+position = Vector2(2147, 327)
+texture = ExtResource("6_4oaou")
+
+[node name="Sprite2D3" type="Sprite2D" parent="forest"]
+position = Vector2(3530, 347)
+texture = ExtResource("6_4oaou")
+
+[node name="Sprite2D4" type="Sprite2D" parent="forest"]
+position = Vector2(4924, 346)
+texture = ExtResource("6_4oaou")
+
+[node name="tree" type="ParallaxLayer" parent="."]
+script = ExtResource("9_wcr3s")
+
+[node name="Sprite2D" type="Sprite2D" parent="tree"]
+position = Vector2(711.5, 387)
+scale = Vector2(0.989583, 1)
+texture = ExtResource("7_uyqfa")
+
+[node name="Sprite2D6" type="Sprite2D" parent="tree"]
+position = Vector2(711.5, 385)
+scale = Vector2(0.989583, 1)
+texture = ExtResource("7_uyqfa")
+
+[node name="Sprite2D5" type="Sprite2D" parent="tree"]
+position = Vector2(-704, 390)
+scale = Vector2(0.989583, 1)
+texture = ExtResource("7_uyqfa")
+
+[node name="Sprite2D2" type="Sprite2D" parent="tree"]
+position = Vector2(2117.5, 389)
+scale = Vector2(0.992361, 1)
+texture = ExtResource("7_uyqfa")
+
+[node name="Sprite2D3" type="Sprite2D" parent="tree"]
+position = Vector2(3514, 387)
+texture = ExtResource("7_uyqfa")
+
+[node name="Sprite2D4" type="Sprite2D" parent="tree"]
+position = Vector2(4937, 387)
+texture = ExtResource("7_uyqfa")
